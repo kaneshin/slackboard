@@ -18,16 +18,16 @@ Slackboard is production ready.
 ## Installation
 
 ```
-go get -u github.com/cubicdaiya/slackboard/...
+go get -u github.com/kaneshin/slackboard/...
 ```
 
 ## Configuration
 
-See [CONFIGURATION.md](https://github.com/cubicdaiya/slackboard/blob/master/CONFIGURATION.md) about details.
+See [CONFIGURATION.md](https://github.com/kaneshin/slackboard/blob/master/CONFIGURATION.md) about details.
 
 ## Specification
 
-See [SPEC.md](https://github.com/cubicdaiya/slackboard/blob/master/SPEC.md) about details.
+See [SPEC.md](https://github.com/kaneshin/slackboard/blob/master/SPEC.md) about details.
 
 ## Run
 
@@ -44,7 +44,7 @@ echo message | slackboard-cli -t test -s slackboard-host:29800
 ```
 
 When `-t tagname` is given to `slackboard-cli`, `slackboard-cli` uses
-[POST /notify](https://github.com/cubicdaiya/slackboard/blob/master/SPEC.md#post-notify).
+[POST /notify](https://github.com/kaneshin/slackboard/blob/master/SPEC.md#post-notify).
 In this case, `slackboard-cli` accepts the options such as `-l`, `-sync`, `-title`.
 
 And you can send a message to Slack's channel directly from v0.5.0.
@@ -53,7 +53,7 @@ And you can send a message to Slack's channel directly from v0.5.0.
 echo message | slackboard-cli -c random -s slackboard-host:29800
 ```
 
-When `-c channelname` is given to `slackboard-cli`, `slackboard-cli` uses [POST /notify-directly](https://github.com/cubicdaiya/slackboard/blob/master/SPEC.md#post-notify-directly). In this case, `slackboard-cli` accepts the all options except `-t` and `-l`.
+When `-c channelname` is given to `slackboard-cli`, `slackboard-cli` uses [POST /notify-directly](https://github.com/kaneshin/slackboard/blob/master/SPEC.md#post-notify-directly). In this case, `slackboard-cli` accepts the all options except `-t` and `-l`.
 
 ```
 echo message | slackboard-cli -c random -s slackboard-host:29800 -u username -i :icon_emoji: -C #ff00ff
@@ -70,7 +70,7 @@ echo warning     | slackboard-cli -t test -s slackboard-host:29800 -l warn
 echo critical    | slackboard-cli -t test -s slackboard-host:29800 -l crit
 ```
 
-![attachment-color](https://raw.githubusercontent.com/cubicdaiya/slackboard/master/img/attachments.png)
+![attachment-color](https://raw.githubusercontent.com/kaneshin/slackboard/master/img/attachments.png)
 
 Or you can set color keywords or color-code of [Slack Attachments](https://api.slack.com/docs/attachments) with `-C` directly.
 

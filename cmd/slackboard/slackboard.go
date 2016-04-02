@@ -4,7 +4,7 @@ import (
 	"flag"
 	"log"
 
-	"github.com/cubicdaiya/slackboard/slackboard"
+	"github.com/kaneshin/slackboard/slackboard"
 )
 
 func main() {

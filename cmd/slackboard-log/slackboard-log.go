@@ -8,7 +8,7 @@ import (
 	"os/exec"
 	"strings"
 
-	"github.com/cubicdaiya/slackboard/slackboard"
+	"github.com/kaneshin/slackboard/slackboard"
 )
 
 func main() {
